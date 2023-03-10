@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_videos",
+  "info": {
+    "singularName": "order-video",
+    "pluralName": "order-videos",
+    "displayName": "Order Video",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "max_budget": {
+      "type": "integer",
+      "required": true
+    },
+    "deadline": {
+      "type": "date",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "min_cost": {
+      "type": "integer"
+    },
+    "company_name": {
+      "type": "string",
+      "required": true
+    },
+    "music_file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "audios",
+        "videos",
+        "images"
+      ]
+    },
+    "music_link": {
+      "type": "string"
+    },
+    "product_name": {
+      "type": "string"
+    },
+    "wedding_videos": {
+      "type": "json"
+    },
+    "number_of_guests": {
+      "type": "integer"
+    },
+    "artist_or_band": {
+      "type": "string"
+    }
+  }
+}

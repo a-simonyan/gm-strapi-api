@@ -1,0 +1,35 @@
+{
+  "name": "golden-touch-media",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.6.1",
+    "@strapi/plugin-users-permissions": "4.6.1",
+    "@strapi/provider-email-sendgrid": "^4.6.1",
+    "@strapi/strapi": "4.6.1",
+    "better-sqlite3": "8.0.1",
+    "dotenv": "^16.0.3",
+    "handlebars": "^4.7.7",
+    "nodemailer": "^6.9.1",
+    "strapi-plugin-email-designer": "^2.1.2"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "f3742902-e06d-4d0a-b8b6-5282d2af8998"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
