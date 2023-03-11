@@ -1,5 +1,5 @@
 module.exports = {  
-  async afterCreate(event) {    // Connected to "Save" button in admin panel   
+  async afterCreate(event) {   
     const { result } = event;
     const fs = require('fs');
     const handlebars = require('handlebars');
@@ -34,34 +34,34 @@ module.exports = {
         description: result.description
       };
       const htmlToSend = template(replacements)
-      const logoContent  = fs.readFileSync(path.join(__dirname, '/../../../../../public/email-img/logo.png')).toString('base64')
-      const phoneContent = fs.readFileSync(path.join(__dirname, '/../../../../../public/email-img/phone.png')).toString('base64')
-      const emailContent = fs.readFileSync(path.join(__dirname, '/../../../../../public/email-img/email.png')).toString('base64')
+      const logoContent  = fs.readFileSync(path.join(__dirname, '/../../../../../public/email-img/gm-logo.png')).toString('base64')
+      const youtubeContent = fs.readFileSync(path.join(__dirname, '/../../../../../public/email-img/youtube.png')).toString('base64')
+      const instaContent = fs.readFileSync(path.join(__dirname, '/../../../../../public/email-img/insta.png')).toString('base64')
       
       try{
         strapi.plugins['email'].services.email.send(            
           {
-            to: 'artavazdavagyan.arnology@gmail.com',
-            from: 'artavazdavagyan.arnology@gmail.com',
+            to:  'armine.simonyan100@gmail.com',
+            from: 'armine.simonyan100@gmail.com',
             subject: 'Welcome to Strapi',                  
             html: htmlToSend,
             attachments: [
               {
-                filename: 'email.png',
-                content: emailContent,
+                filename: 'insta.png',
+                content: instaContent,
                 disposition: 'inline',
-                content_id: 'emailImg'
+                content_id: 'instaImg'
 
               },
               {
-                filename: 'phone.png',
-                content: phoneContent,
+                filename: 'youtube.png',
+                content: youtubeContent,
                 disposition: 'inline',
-                content_id: 'phoneImg'
+                content_id: 'youtubeImg'
               },
             
               {
-                filename: 'logo.png',
+                filename: 'gm-logo.png',
                 content:  logoContent,
                 disposition: 'inline',
                 content_id: 'logoImg'

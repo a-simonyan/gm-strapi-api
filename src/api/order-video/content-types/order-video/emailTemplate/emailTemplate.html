@@ -10,14 +10,15 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: sans-serif;
+        font-family: 'Segoe UI';
+        font-style: normal;
       }
     </style>
   </head>
   <body
     style="
-      width: 100%;
-      min-height: 100vh;
+      width: 600px;
+      height: 700px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -27,9 +28,8 @@
       style="
         width: 100%;
         background-repeat: no-repeat;
-        background-color: #010006;
+        background-color: #212121;
         padding: 80px 70px 90px;
-        border-radius: 20px;
       "
     >
       <table
@@ -37,45 +37,51 @@
       >
         <tbody       style="width: 100%;"
         >
-          <tr style=" display: block; "><td style=" display: block; width:100%; text-align: right; float: right;"><img
+          <tr style=" display: block; "><td style="  width:100%; padding-left: 132px;"><img
             src="cid:logoImg"
             alt="logo"
           /></td></tr>
           
           <tr style="
           width: 100%;
-          min-height: 431px;
-          background-color: white;
-          border-radius: 40px;
+          background-color: #212121;
           padding-bottom:40px ;
          
-          margin-top: 80px;
           box-sizing: content-box;
           position: relative;
           display: block;
         "><td style="width: 100%; display: block;">
-            <div
-            style="
-              text-align: center;
-              padding-top: 64px;
-              width: 80%;
-              margin: 40px auto 47px;
+          <div
+            style="  width: 80%; display: block;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 30px;
+              margin: 40px auto;
+              color: #E7E7E7;
             "
           >
-            <p style="font-size: 22px; font-weight: 600; margin-bottom: 24px">
-              {{firstName}} {{lastName}}
-            </p>
-            <p style="font-size: 20px; line-height: 27.24px">
-        
-             {{description}}
+            <p style="padding-left: 15px;">Your email has been submitted. We will </p>
+            <p style="padding-left: 98px">contact you shortly.</p>
+            <p style="padding-top: 40px; padding-left: 60px;"> Thank you for choosing us. </p>
+          
+          </div>
+          <div style="margin-top: 131px;">
+            <p style="width: 421px; height: 0; margin-left: 20px; border: 1px solid #424242;"></p>
+            <p style="color: #D8BE69; font-family: 'Segoe UI'; padding-top: 35px; padding-left: 170px;
+           
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 29px;
+            ">      
+              Follow Us
             </p>
           </div>
-          <div style="width: 80%; margin: 0 auto">
-            <p style="display: flex; align-items: center">
-              <img src="cid:phoneImg" alt="phone" /><span>{{phone}}</span>
+          <div style="display: flex; width: 80%; margin: 20px auto; padding-left: 145px;">
+            <p style="margin-right: 20px;  width: 22px; height: 22px;">
+              <img src="cid:youtubeImg" alt="phone" />
             </p>
-            <p style="display: flex; align-items: center">
-              <img src='cid:emailImg' alt="email" /><span>{{email}}</span>
+            <p style=" width: 32px; height: 22px; ">
+              <img src='cid:instaImg' alt="email" />
           </div>
           </td></tr>
         
